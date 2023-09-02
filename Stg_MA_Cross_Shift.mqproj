@@ -15,7 +15,7 @@
   "files":
   [
     {
-      "path":"Stg_MA.mq5",
+      "path":"Stg_MA_Cross_Shift.mq5",
       "compile":true,
       "relative_to_project":true
     },
@@ -215,7 +215,7 @@
       "relative_to_project":false
     },
     {
-      "path":"Stg_MA.mqh",
+      "path":"Stg_MA_Cross_Shift.mqh",
       "compile":false,
       "relative_to_project":true
     },
@@ -706,6 +706,91 @@
     },
     {
       "path":"MQL5\\Include\\EA31337-classes\\Storage\\Singleton.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_AMA.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ValueStorage.price.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ObjectsCache.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Price\\Indi_Price.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_DEMA.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_FractalAdaptiveMA.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ValueStorage.all.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ValueStorage.spread.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ValueStorage.tick_volume.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ValueStorage.time.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Storage\\ValueStorage.volume.h",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_Ichimoku.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_PriceChannel.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_ZigZag.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_SAR.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_TEMA.mqh",
+      "compile":false,
+      "relative_to_project":false
+    },
+    {
+      "path":"MQL5\\Include\\EA31337-classes\\Indicators\\Indi_VIDYA.mqh",
       "compile":false,
       "relative_to_project":false
     }

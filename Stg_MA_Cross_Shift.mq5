@@ -20,7 +20,7 @@
 #include <EA31337-classes/Strategy.mqh>
 
 // Inputs.
-INPUT_GROUP("MA strategy: main");
+INPUT_GROUP("MA Cross Shift strategy: main");
 input int Active_Tfs = M15B + M30B + H1B + H2B + H3B + H4B + H6B +
                        H8B;               // Timeframes (M1=1,M2=2,M5=16,M15=256,M30=1024,H1=2048,H2=4096,H3,H4,H6,H8)
 input ENUM_LOG_LEVEL Log_Level = V_INFO;  // Log level.
@@ -30,9 +30,9 @@ input bool Info_On_Chart = true;          // Display info on chart.
 #include "Stg_MA_Cross_Shift.mqh"
 
 // Defines.
-#define ea_name "Strategy MA"
+#define ea_name "Strategy MA Cross Shift"
 #define ea_version "2.000"
-#define ea_desc "Strategy based on the moving average price indicators."
+#define ea_desc "Strategy based on the moving average price indicators implementing shifted cross signal."
 #define ea_link "https://github.com/EA31337/Strategy-MA"
 #define ea_author "EA31337 Ltd"
 
