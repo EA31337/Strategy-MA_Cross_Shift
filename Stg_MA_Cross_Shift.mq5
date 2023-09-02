@@ -59,7 +59,7 @@ int OnInit() {
   bool _result = true;
   EAParams ea_params(__FILE__, Log_Level);
   ea = new EA(ea_params);
-  _result &= ea.StrategyAdd<Stg_MA>(Active_Tfs);
+  _result &= ea.StrategyAdd<Stg_MA_Cross_Shift>(Active_Tfs);
   return (_result ? INIT_SUCCEEDED : INIT_FAILED);
 }
 

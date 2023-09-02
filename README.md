@@ -7,7 +7,8 @@
 [![License][license-image]][license-link]
 [![Edit][gh-edit-badge]][gh-edit-link]
 
-Strategy based on the moving average price indicators implementing shifted cross signal.
+Strategy based on the moving average price indicators
+implementing shifted cross signal.
 
 ## Dependencies
 
