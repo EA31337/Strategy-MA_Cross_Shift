@@ -1,4 +1,4 @@
-# Strategy MA
+# Strategy MA Cross Shift
 
 [![Status][gha-image-check-master]][gha-link-check-master]
 [![Status][gha-image-compile-master]][gha-link-compile-master]
@@ -13,13 +13,6 @@ Strategy based on the moving average price indicators.
 
 | Tag      | Framework |
 |:--------:|:---------:|
-| v1.000   | v2.000    |
-| v1.001   | v2.001    |
-| ...      | ...       |
-| v1.010   | v2.010    |
-| v1.011   | v2.011.1  |
-| v1.012   | v2.012.1  |
-| v1.013   | v2.013    |
 | v2.000   | v3.000.1  |
 
 <!-- Named links -->
@@ -28,12 +21,12 @@ Strategy based on the moving average price indicators.
 [gh-discuss-link]: https://github.com/EA31337/EA31337-Strategies/discussions
 
 [gh-edit-badge]: https://img.shields.io/badge/GitHub-edit-purple.svg?logo=github
-[gh-edit-link]: https://github.dev/EA31337/Strategy-MA
+[gh-edit-link]: https://github.dev/EA31337/Strategy-MA_Cross_Shift
 
-[gha-link-check-master]: https://github.com/EA31337/Strategy-MA/actions?query=workflow:Check+branch%3Amaster
-[gha-image-check-master]: https://github.com/EA31337/Strategy-MA/workflows/Check/badge.svg?branch=master
-[gha-link-compile-master]: https://github.com/EA31337/Strategy-MA/actions?query=workflow:Compile+branch%3Amaster
-[gha-image-compile-master]: https://github.com/EA31337/Strategy-MA/workflows/Compile/badge.svg?branch=master
+[gha-link-check-master]: https://github.com/EA31337/Strategy-MA_Cross_Shift/actions?query=workflow:Check+branch%3Amaster
+[gha-image-check-master]: https://github.com/EA31337/Strategy-MA_Cross_Shift/workflows/Check/badge.svg?branch=master
+[gha-link-compile-master]: https://github.com/EA31337/Strategy-MA_Cross_Shift/actions?query=workflow:Compile+branch%3Amaster
+[gha-image-compile-master]: https://github.com/EA31337/Strategy-MA_Cross_Shift/workflows/Compile/badge.svg?branch=master
 
 [tg-channel-image]: https://img.shields.io/badge/Telegram-join-0088CC.svg?logo=telegram
 [tg-channel-link]: https://t.me/EA31337

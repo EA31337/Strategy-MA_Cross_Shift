@@ -6,8 +6,8 @@
 
 /**
  * @file
- * Implements MA strategy.
+ * Implements MA Cross Shift strategy.
  */
 
 // Includes the main code.
-#include "Stg_MA.mq5"
+#include "Stg_MA_Cross_Shift.mq5"
