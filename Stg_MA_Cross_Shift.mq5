@@ -1,6 +1,6 @@
 /**
  * @file
- * Implements MA strategy.
+ * Implements MA Cross Shift strategy.
  */
 
 // Includes conditional compilation directives.
@@ -33,7 +33,7 @@ input bool Info_On_Chart = true;          // Display info on chart.
 #define ea_name "Strategy MA Cross Shift"
 #define ea_version "2.000"
 #define ea_desc "Strategy based on the moving average price indicators implementing shifted cross signal."
-#define ea_link "https://github.com/EA31337/Strategy-MA"
+#define ea_link "https://github.com/EA31337/Strategy-MA_Cross_Shift"
 #define ea_author "EA31337 Ltd"
 
 // Properties.

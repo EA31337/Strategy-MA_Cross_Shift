@@ -137,12 +137,12 @@ class Stg_MA_Cross_Shift : public Strategy {
 
   static Stg_MA_Cross_Shift *Init(ENUM_TIMEFRAMES _tf = NULL, EA *_ea = NULL) {
     // Initialize strategy initial values.
-    Stg_MA_Cross_Shift_Params_Defaults stg_ma_defaults;
-    StgParams _stg_params(stg_ma_defaults);
+    Stg_MA_Cross_Shift_Params_Defaults stg_ma_cross_shift_defaults;
+    StgParams _stg_params(stg_ma_cross_shift_defaults);
     // Initialize Strategy instance.
     ChartParams _cparams(_tf, _Symbol);
     TradeParams _tparams;
-    Strategy *_strat = new Stg_MA_Cross_Shift(_stg_params, _tparams, _cparams, "MA");
+    Strategy *_strat = new Stg_MA_Cross_Shift(_stg_params, _tparams, _cparams, "MA Cross Shift");
     return _strat;
   }
 
