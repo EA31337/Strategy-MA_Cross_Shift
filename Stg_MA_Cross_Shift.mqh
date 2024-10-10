@@ -157,11 +157,10 @@ class Stg_MA_Cross_Shift : public Strategy {
         IndiAMAParams _indi_params(::MA_Cross_Shift_Indi_AMA_InpPeriodAMA, ::MA_Cross_Shift_Indi_AMA_InpFastPeriodEMA,
                                    ::MA_Cross_Shift_Indi_AMA_InpSlowPeriodEMA, ::MA_Cross_Shift_Indi_AMA_InpShiftAMA,
                                    PRICE_TYPICAL, ::MA_Cross_Shift_Indi_AMA_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_AMA_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_AMA(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_AMA(_indi_params, ::MA_Cross_Shift_Indi_AMA_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_AMA_Shift2);
-        SetIndicator(new Indi_AMA(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_AMA(_indi_params, ::MA_Cross_Shift_Indi_AMA_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_AMA_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_AMA_Shift2);
         break;
@@ -170,11 +169,10 @@ class Stg_MA_Cross_Shift : public Strategy {
       {
         IndiDEIndiMAParams _indi_params(::MA_Cross_Shift_Indi_DEMA_Period, ::MA_Cross_Shift_Indi_DEMA_MA_Shift,
                                         ::MA_Cross_Shift_Indi_DEMA_Applied_Price, ::MA_Cross_Shift_Indi_DEMA_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_DEMA_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_DEMA(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_DEMA(_indi_params, ::MA_Cross_Shift_Indi_DEMA_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_DEMA_Shift2);
-        SetIndicator(new Indi_DEMA(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_DEMA(_indi_params, ::MA_Cross_Shift_Indi_DEMA_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_DEMA_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_DEMA_Shift2);
         break;
@@ -183,11 +181,10 @@ class Stg_MA_Cross_Shift : public Strategy {
       {
         IndiFrAIndiMAParams _indi_params(::MA_Cross_Shift_Indi_FrAMA_Period, ::MA_Cross_Shift_Indi_FrAMA_MA_Shift,
                                          ::MA_Cross_Shift_Indi_FrAMA_Applied_Price, ::MA_Cross_Shift_Indi_FrAMA_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_FrAMA_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_FrAMA(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_FrAMA(_indi_params, ::MA_Cross_Shift_Indi_FrAMA_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_FrAMA_Shift2);
-        SetIndicator(new Indi_FrAMA(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_FrAMA(_indi_params, ::MA_Cross_Shift_Indi_FrAMA_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_FrAMA_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_FrAMA_Shift2);
         break;
@@ -197,11 +194,10 @@ class Stg_MA_Cross_Shift : public Strategy {
         IndiIchimokuParams _indi_params(
             ::MA_Cross_Shift_Indi_Ichimoku_Period_Tenkan_Sen, ::MA_Cross_Shift_Indi_Ichimoku_Period_Kijun_Sen,
             ::MA_Cross_Shift_Indi_Ichimoku_Period_Senkou_Span_B, ::MA_Cross_Shift_Indi_Ichimoku_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_Ichimoku_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_Ichimoku(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_Ichimoku(_indi_params, ::MA_Cross_Shift_Indi_Ichimoku_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_Ichimoku_Shift2);
-        SetIndicator(new Indi_Ichimoku(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_Ichimoku(_indi_params, ::MA_Cross_Shift_Indi_Ichimoku_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_Ichimoku_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_Ichimoku_Shift2);
         break;
@@ -211,11 +207,10 @@ class Stg_MA_Cross_Shift : public Strategy {
         IndiMAParams _indi_params(::MA_Cross_Shift_Indi_MA_Period, ::MA_Cross_Shift_Indi_MA_MA_Shift,
                                   ::MA_Cross_Shift_Indi_MA_Method, ::MA_Cross_Shift_Indi_MA_Applied_Price,
                                   ::MA_Cross_Shift_Indi_MA_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_MA_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_MA(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_MA(_indi_params, ::MA_Cross_Shift_Indi_MA_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_MA_Shift2);
-        SetIndicator(new Indi_MA(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_MA(_indi_params, ::MA_Cross_Shift_Indi_MA_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_MA_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_MA_Shift2);
         break;
@@ -224,11 +219,10 @@ class Stg_MA_Cross_Shift : public Strategy {
       {
         IndiPriceChannelParams _indi_params(::MA_Cross_Shift_Indi_PriceChannel_Period,
                                             ::MA_Cross_Shift_Indi_PriceChannel_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_PriceChannel_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_PriceChannel(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_PriceChannel(_indi_params, ::MA_Cross_Shift_Indi_PriceChannel_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_PriceChannel_Shift2);
-        SetIndicator(new Indi_PriceChannel(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_PriceChannel(_indi_params, ::MA_Cross_Shift_Indi_PriceChannel_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_PriceChannel_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_PriceChannel_Shift2);
         break;
@@ -237,11 +231,10 @@ class Stg_MA_Cross_Shift : public Strategy {
       {
         IndiSARParams _indi_params(::MA_Cross_Shift_Indi_SAR_Step, ::MA_Cross_Shift_Indi_SAR_Maximum_Stop,
                                    ::MA_Cross_Shift_Indi_SAR_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_SAR_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_SAR(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_SAR(_indi_params, ::MA_Cross_Shift_Indi_SAR_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_SAR_Shift2);
-        SetIndicator(new Indi_SAR(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_SAR(_indi_params, ::MA_Cross_Shift_Indi_SAR_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_SAR_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_SAR_Shift2);
         break;
@@ -250,11 +243,10 @@ class Stg_MA_Cross_Shift : public Strategy {
       {
         IndiTEMAParams _indi_params(::MA_Cross_Shift_Indi_TEMA_Period, ::MA_Cross_Shift_Indi_TEMA_MA_Shift,
                                     ::MA_Cross_Shift_Indi_TEMA_Applied_Price, ::MA_Cross_Shift_Indi_TEMA_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_TEMA_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_TEMA(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_TEMA(_indi_params, ::MA_Cross_Shift_Indi_TEMA_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_TEMA_Shift2);
-        SetIndicator(new Indi_TEMA(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_TEMA(_indi_params, ::MA_Cross_Shift_Indi_TEMA_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_TEMA_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_TEMA_Shift2);
         break;
@@ -264,11 +256,10 @@ class Stg_MA_Cross_Shift : public Strategy {
         IndiVIDYAParams _indi_params(::MA_Cross_Shift_Indi_VIDYA_Period, ::MA_Cross_Shift_Indi_VIDYA_MA_Period,
                                      ::MA_Cross_Shift_Indi_VIDYA_MA_Shift, ::MA_Cross_Shift_Indi_VIDYA_Applied_Price,
                                      ::MA_Cross_Shift_Indi_VIDYA_Shift);
-        _indi_params.SetDataSourceType(::MA_Cross_Shift_Indi_VIDYA_SourceType);
         _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
-        SetIndicator(new Indi_VIDYA(_indi_params), ::MA_Cross_Shift_Type);
+        SetIndicator(new Indi_VIDYA(_indi_params, ::MA_Cross_Shift_Indi_VIDYA_SourceType), ::MA_Cross_Shift_Type);
         _indi_params.SetShift(::MA_Cross_Shift_Indi_VIDYA_Shift2);
-        SetIndicator(new Indi_VIDYA(_indi_params), ::MA_Cross_Shift_Type + 1);
+        SetIndicator(new Indi_VIDYA(_indi_params, ::MA_Cross_Shift_Indi_VIDYA_SourceType), ::MA_Cross_Shift_Type + 1);
         ssparams.SetShift1(MA_Cross_Shift_Indi_VIDYA_Shift);
         ssparams.SetShift2(MA_Cross_Shift_Indi_VIDYA_Shift2);
         break;
@@ -283,8 +274,8 @@ class Stg_MA_Cross_Shift : public Strategy {
    * Check strategy's opening signal.
    */
   bool SignalOpen(ENUM_ORDER_TYPE _cmd, int _method = 0, float _level = 0.0f, int _shift = 0) {
-    IndicatorBase *_indi1 = GetIndicator(::MA_Cross_Shift_Type);
-    IndicatorBase *_indi2 = GetIndicator(::MA_Cross_Shift_Type + 1);
+    IndicatorData *_indi1 = GetIndicator(::MA_Cross_Shift_Type);
+    IndicatorData *_indi2 = GetIndicator(::MA_Cross_Shift_Type + 1);
     // uint _ishift1 = _indi1.GetParams().GetShift(); // @todo: Convert into Get().
     // uint _ishift2 = _indi2.GetParams().GetShift(); // @todo: Convert into Get().
     uint _ishift1 = ssparams.GetShift1();
